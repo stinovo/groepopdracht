@@ -108,7 +108,10 @@ dl {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
+ul{
+    background-color: #f1f1f19d;
+    border-radius: 5px;
+}
 ol ol,
 ul ul,
 ol ul,
@@ -155,12 +158,12 @@ sup {
 }
 
 a {
-    color: #3490dc;
+    color: #861ace7e;
     text-decoration: none;
     background-color: transparent;
 }
 a:hover {
-    color: #1d68a7;
+    color: #ff6200;
     text-decoration: underline;
 }
 
@@ -362,6 +365,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
     font-size: 2.25rem;
+    font-weight: bold;
 }
 
 h2, .h2 {
