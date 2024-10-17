@@ -10035,10 +10035,10 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 25px;
+    height: 100px;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     background-color: #343a40;
     color: #fff;
 }
@@ -10046,4 +10046,10 @@ footer .container {
     margin: 0;
     width: fit-content;
     padding-right: 15px;
+    justify-content: end;
+}
+footer .footer {
+    margin: 0;
+    width: fit-content;
+    padding-right: 25px;
 }

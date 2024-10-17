@@ -1,5 +1,22 @@
 
 <footer>
+    <div class="footer">
+        <h6>Over ons</h6>
+        <p>Wij zijn een innovatief bedrijf dat zich <br> richt op het leveren van hoogwaardige <br> producten en diensten aan onze klanten.</p>
+    </div>
+    <div class="footer">
+        <h6>Contactgegevens</h6>
+        <p>Telefoon: +31 6 12345678, Email: info@4smanuals.nl</p>
+        <p>Adres: Wilhelmina 123, 4567 AB Breda</p>
+    </div>
+    <div class="footer">
+        <h6>Volg ons</h6>
+        <p>
+            <a href="#">Twitter</a> |
+            <a href="#">LinkedIn</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </div>
     <div class="container">
     	© Copyright 2024 Avarix
     </div>
