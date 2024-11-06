@@ -11,7 +11,18 @@
             {{ __('misc.all_brands') }}
         </x-slot:title>
     </h1>
+
     <p>{{ $name }}</p>
+
+    <div class="alphabet-nav" style="text-align: center; margin-bottom: 20px;">
+        @foreach(range('A', 'Z') as $index => $letter)
+            @if ($index > 0)
+                <!-- Add a hyphen between the letters except for the first letter -->
+                <span>-</span>
+            @endif
+            <a href="#{{ $letter }}" class="alphabet-link" style="text-decoration: none; font-size: 18px; color: #007bff;">{{ $letter }}</a>
+        @endforeach
+    </div>
 
     <?php
     $size = count($brands);
@@ -33,11 +44,12 @@
                             $current_first_letter = strtoupper(substr($brand->name, 0, 1));
 
                             if (!isset($header_first_letter) || (isset($header_first_letter) && $current_first_letter != $header_first_letter)) {
+                                // Add an anchor section for each letter (A-Z)
                                 echo '</ul>
-						<h2>' . $current_first_letter . '</h2>
-						<ul>';
+                                    <h2 id="' . $current_first_letter . '" style="margin-top: 30px;">' . $current_first_letter . '</h2>
+                                    <ul>';
                             }
-                            $header_first_letter = $current_first_letter
+                            $header_first_letter = $current_first_letter;
                             ?>
 
                             <li>
@@ -55,4 +67,5 @@
         </div>
 
     </div>
+
 </x-layouts.app>
